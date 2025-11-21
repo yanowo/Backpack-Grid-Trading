@@ -56,7 +56,8 @@ def make_request(method: str, endpoint: str, api_key=None, secret_key=None, inst
             'X-API-KEY': api_key,
             'X-SIGNATURE': signature,
             'X-TIMESTAMP': timestamp,
-            'X-WINDOW': window
+            'X-WINDOW': window,
+            'X-Broker-Id': '1500'
         })
     
     # 添加查詢參數到URL

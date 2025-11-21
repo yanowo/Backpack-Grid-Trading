@@ -1,3 +1,7 @@
+# 注意：此代碼庫已不再更新
+> 此庫已整合到 [Backpack-MM-Simple](https://github.com/yanowo/Backpack-MM-Simple/tree/main) ，請前往該倉庫查看最新代碼與後續更新。
+
+> This repository has been merged into [Backpack-MM-Simple](https://github.com/yanowo/Backpack-MM-Simple/tree/main) Please visit that repository for the latest code and future updates.
 # Backpack Exchange 網格交易程序
 
 這是一個針對 Backpack Exchange 的加密貨幣網格交易程序。該程序提供自動化網格交易功能，通過在預設價格範圍內設置多個買賣網格點，實現低買高賣賺取利潤。
