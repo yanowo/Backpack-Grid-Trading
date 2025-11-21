@@ -250,10 +250,12 @@ class BackpackWebSocket:
                 on_pong=self.on_pong
             )
             
-            # 創建新線程
+            # 創建新線程並重新啟動心跳
+            self.running = True
             self.ws_thread = threading.Thread(target=self.ws_run_forever)
             self.ws_thread.daemon = True
             self.ws_thread.start()
+            self.start_heartbeat()
             
             # 更新最後心跳時間，避免重連後立即觸發心跳檢測
             self.last_heartbeat = time.time()

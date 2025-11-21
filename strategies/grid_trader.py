@@ -361,13 +361,7 @@ class GridTrader:
             # 嘗試關閉現有連接
             if self.ws:
                 try:
-                    if hasattr(self.ws, 'running') and self.ws.running:
-                        self.ws.running = False
-                    if hasattr(self.ws, 'ws') and self.ws.ws:
-                        try:
-                            self.ws.ws.close()
-                        except:
-                            pass
+                    # 使用 BackpackWebSocket 的 close 方法以確保完全斷開
                     self.ws.close()
                     time.sleep(0.5)
                 except Exception as e:
